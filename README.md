@@ -8,8 +8,7 @@
   - Open terminal on your pc and navigate to the root directory of the project.
   - Run "npm install" command inside the terminal to install all the required dependencies.
   - Create a '.env' file inside root directory and define values for
-      - PORT ( port on which your project will run )
-      - MONGODB_URL ( URL of your mongoDB database for connecting to database )
+   - MONGODB_URL ( URL of your mongoDB database for connecting to database )
   - Run 'npm start' command inside terminal to run the code.
   - Open your web browser and serach for 'localhost:{PORT}/' to see the output.
 
