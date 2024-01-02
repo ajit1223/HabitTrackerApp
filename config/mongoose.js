@@ -4,8 +4,8 @@ const mongoose = require('mongoose');
 
 // getting database url from env variables
 // const { MONGODB_URL } = process.env;
+// const MONGODB_URL = "mongodb+srv://ajitkumaryadav1223:VGPbahpy6qXrnpoZ@cluster0.uxzzd4d.mongodb.net/?retryWrites=true&w=majority";
 const MONGODB_URL = "mongodb+srv://ajitkumaryadav1223:VGPbahpy6qXrnpoZ@cluster0.uxzzd4d.mongodb.net/?retryWrites=true&w=majority";
-
 
 // connect to database
 exports.connect = () => {
