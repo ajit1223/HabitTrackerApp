@@ -57,6 +57,7 @@
 
     <!-- list of all the habits -->
     <% for (let i of myHabits) { %>
+
       <!-- card of a single habit -->
       <div
         class="w-100 h-auto d-flex justify-content-between align-items-center text-white my-2 p-2 shadow-sm rounded fw-bold list-item">
@@ -66,15 +67,13 @@
         </div>
 
         <!-- number of days on which the task is done in past week -->
+
+        <!-- task status for today -->
         <div class="px-1">
-          <% for (let day=0; day < 7; day++) { %>
-            <!-- button for each day -->
-            <button class="btn btn-sm btn-outline-primary mx-1"
-              onclick="toggleStatus('<%= i._id %>', <%= day %>, '<%= i.weeklyStatus[day] %>')">
-              <%= i.weeklyStatus[day]==='true' ? 'Done' : 'Not Done' %>
-            </button>
-            <% } %>
+          <%= i.completedDays %> / 7 Days | Today: <%= i.weeklyStatus[6]==='true' ? 'Done' : 'Not Done' %>
         </div>
       </div>
+
       <% } %>
   </div>
+</div>
